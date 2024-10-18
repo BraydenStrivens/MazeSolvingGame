@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solving Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="outerMostDiv">
+        <div class="canvasDiv">
+            <button id="previousStateButton" type="button">Previous State</button>
+            <label for="StateChange">Choose State:</label>
+            <select id="StateChange" name="StateChange">
+                <option value="Main Menu">Main Menu</option>
+                <option value="Pause">Pause</option>
+                <option value="Play">Play</option>
+                <option value="Select Mode">Select Mode</option>
+                <option value="Store">Store</option>
+                <option value="Customize">Customize</option>
+                <option value="Settings">Settings</option>
+            </select>
+        </div>
+
+        <canvas id="canvas1"></canvas>
+
+    </div>
+
+    <script type="module" src="state.js"></script>
+    <script type="module" src="play_state.js"></script>
+    <script type="module" src="select_mode.js"></script>
+    <script type="module" src="main_menu_state.js"></script>
+    <script type="module" src="pause_state.js"></script>
+    <script type="module" src="customize_state.js"></script>
+    <script type="module" src="settings_state.js"></script>
+    <script type="module" src="store_state.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="game.js"></script>
+    
+</body>
+</html>
